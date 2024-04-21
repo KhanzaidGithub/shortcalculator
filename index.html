@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="calculator">
+        <input id="display"
+            readonly><!--this property is just for seeing you can't write anything here even if you try-->
+        <div id="keys">
+            <button onclick="operators('+')" class="operators-btn">+</button>
+            <button onclick="operators('7')">7</button>
+            <button onclick="operators('8')">8</button>
+            <button onclick="operators('9')">9</button>
+            <button onclick="operators('-')" class="operators-btn">-</button>
+            <button onclick="operators('4')">4</button>
+            <button onclick="operators('5')">5</button>
+            <button onclick="operators('*')" class="operators-btn">*</button>
+            <button onclick="operators('1')">1</button>
+            <button onclick="operators('2')">2</button>
+            <button onclick="operators('3')">3</button>
+            <button onclick="operators('/')" class="operators-btn">/</button>
+            <button onclick="operators('0')">0</button>
+            <button onclick="operators('.')" class="operators-btn">.</button>
+            <button onclick="calculate()" class="operators-btn">=</button>
+            <button onclick="cleardisplay()">AC</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
